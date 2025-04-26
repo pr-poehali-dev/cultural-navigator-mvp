@@ -1,68 +1,71 @@
 
+import { Hero } from "@/components/Hero";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { Hero } from "@/components/Hero";
 import { CultureMap } from "@/components/CultureMap";
 import { FeedbackForm } from "@/components/FeedbackForm";
+import { MapIcon, BookOpenIcon, LandmarkIcon, UserIcon } from "lucide-react";
 
-const Index = () => {
+export default function Index() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main>
+      <main className="flex-1">
         <Hero />
         
-        <section className="container mx-auto px-4 py-12">
-          <h2 className="text-3xl font-bold mb-6">Исследуйте культурные объекты</h2>
-          <p className="text-lg text-muted-foreground mb-8">
-            Интерактивная карта поможет вам найти интересные места и спланировать культурный маршрут
-          </p>
-          <CultureMap />
+        {/* Карта культурных объектов */}
+        <section id="map" className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">
+                Интерактивная карта культурного наследия
+              </h2>
+              <p className="text-lg text-gray-600">
+                Исследуйте уникальные достопримечательности и культурные объекты на нашей интерактивной карте
+              </p>
+            </div>
+            <CultureMap />
+          </div>
         </section>
         
-        <section className="bg-muted py-12">
+        {/* Статистика */}
+        <section className="py-12 bg-primary text-primary-foreground">
           <div className="container mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-6">Статистика проекта</h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="bg-card p-6 rounded-lg shadow-sm text-center">
-                <div className="text-4xl font-bold text-primary mb-2">120+</div>
-                <p className="text-muted-foreground">Культурных объектов</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div className="flex flex-col items-center text-center">
+                <MapIcon className="w-12 h-12 mb-4" />
+                <h3 className="text-3xl font-bold mb-2">300+</h3>
+                <p className="text-primary-foreground/80">Культурных объектов</p>
               </div>
-              <div className="bg-card p-6 rounded-lg shadow-sm text-center">
-                <div className="text-4xl font-bold text-primary mb-2">15</div>
-                <p className="text-muted-foreground">Городов России</p>
+              <div className="flex flex-col items-center text-center">
+                <LandmarkIcon className="w-12 h-12 mb-4" />
+                <h3 className="text-3xl font-bold mb-2">50+</h3>
+                <p className="text-primary-foreground/80">Городов России</p>
               </div>
-              <div className="bg-card p-6 rounded-lg shadow-sm text-center">
-                <div className="text-4xl font-bold text-primary mb-2">5000+</div>
-                <p className="text-muted-foreground">Активных пользователей</p>
+              <div className="flex flex-col items-center text-center">
+                <BookOpenIcon className="w-12 h-12 mb-4" />
+                <h3 className="text-3xl font-bold mb-2">1000+</h3>
+                <p className="text-primary-foreground/80">Исторических справок</p>
+              </div>
+              <div className="flex flex-col items-center text-center">
+                <UserIcon className="w-12 h-12 mb-4" />
+                <h3 className="text-3xl font-bold mb-2">500+</h3>
+                <p className="text-primary-foreground/80">Ежемесячных посещений</p>
               </div>
             </div>
           </div>
         </section>
         
-        <section className="container mx-auto px-4 py-12">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold mb-6">Ваше мнение важно для нас</h2>
-              <p className="text-lg text-muted-foreground mb-4">
-                Мы стремимся сделать "Культурный Навигатор" максимально полезным и удобным. 
-                Поделитесь своими впечатлениями или предложениями по улучшению нашего сервиса.
+        {/* Форма обратной связи */}
+        <section id="feedback" className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto text-center mb-12">
+              <h2 className="text-3xl font-bold mb-4">
+                Ваше мнение важно для нас
+              </h2>
+              <p className="text-lg text-gray-600">
+                Помогите нам улучшить проект "Культурный Навигатор", оставив свой отзыв или предложение
               </p>
-              <p className="text-lg text-muted-foreground mb-4">
-                Каждый отзыв помогает нам становиться лучше и расширять функционал проекта.
-              </p>
-              <div className="flex items-center gap-4 mt-8">
-                <div className="flex -space-x-2">
-                  {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-10 h-10 rounded-full bg-primary text-primary-foreground flex items-center justify-center border-2 border-background">
-                      👤
-                    </div>
-                  ))}
-                </div>
-                <p className="text-muted-foreground">
-                  Присоединяйтесь к сообществу энтузиастов культуры
-                </p>
-              </div>
             </div>
             <FeedbackForm />
           </div>
@@ -71,6 +74,4 @@ const Index = () => {
       <Footer />
     </div>
   );
-};
-
-export default Index;
+}
