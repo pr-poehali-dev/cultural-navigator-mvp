@@ -101,7 +101,7 @@ export function CultureMap() {
       </div>
 
       <div className="bg-muted rounded-lg relative w-full h-[400px] overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-100 to-green-100"></div>
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1524661135-423995f22d0b?w=800&h=600&fit=crop')] bg-cover bg-center"></div>
 
         {filteredPoints.map((point) => (
           <button
