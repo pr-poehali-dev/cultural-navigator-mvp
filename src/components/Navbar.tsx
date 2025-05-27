@@ -1,4 +1,3 @@
-
 import { Link } from "react-router-dom";
 import {
   NavigationMenu,
@@ -23,7 +22,7 @@ const ListItem = React.forwardRef<
           ref={ref}
           className={cn(
             "block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground",
-            className
+            className,
           )}
           {...props}
         >
@@ -67,14 +66,14 @@ export function Navbar() {
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/" className={navigationMenuTriggerStyle()}>
+              <a href="#map" className={navigationMenuTriggerStyle()}>
                 Карта
-              </Link>
+              </a>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link to="/" className={navigationMenuTriggerStyle()}>
+              <a href="#reviews" className={navigationMenuTriggerStyle()}>
                 Отзывы
-              </Link>
+              </a>
             </NavigationMenuItem>
           </NavigationMenuList>
         </NavigationMenu>

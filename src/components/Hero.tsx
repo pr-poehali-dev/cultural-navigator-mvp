@@ -1,4 +1,3 @@
-
 export function Hero() {
   return (
     <div className="relative overflow-hidden bg-primary text-primary-foreground">
@@ -9,15 +8,22 @@ export function Hero() {
             Откройте для себя культурное наследие
           </h1>
           <p className="text-xl md:text-2xl mb-8 text-primary-foreground/90">
-            Интерактивная карта достопримечательностей и культурных объектов для планирования ваших культурных маршрутов
+            Интерактивная карта достопримечательностей и культурных объектов для
+            планирования ваших культурных маршрутов
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <button className="px-6 py-3 bg-white text-primary font-medium rounded-md hover:bg-gray-100 transition-colors">
+            <a
+              href="#map"
+              className="px-6 py-3 bg-white text-primary font-medium rounded-md hover:bg-gray-100 transition-colors"
+            >
               Исследовать карту
-            </button>
-            <button className="px-6 py-3 bg-transparent border border-white text-white font-medium rounded-md hover:bg-white/10 transition-colors">
+            </a>
+            <a
+              href="#about"
+              className="px-6 py-3 bg-transparent border border-white text-white font-medium rounded-md hover:bg-white/10 transition-colors"
+            >
               О проекте
-            </button>
+            </a>
           </div>
         </div>
       </div>
