@@ -47,6 +47,135 @@ const culturePoints: CulturePoint[] = [
     location: { x: 20, y: 70 },
     category: "monument",
   },
+  {
+    id: 4,
+    name: "Третьяковская галерея",
+    description:
+      "Главный музей национального искусства России с крупнейшей коллекцией русского изобразительного искусства.",
+    image:
+      "https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 30, y: 45 },
+    category: "gallery",
+  },
+  {
+    id: 5,
+    name: "Русский музей",
+    description:
+      "Первый государственный музей русского изобразительного искусства в Санкт-Петербурге.",
+    image:
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 55, y: 40 },
+    category: "museum",
+  },
+  {
+    id: 6,
+    name: "Мариинский театр",
+    description:
+      "Академический театр оперы и балета в Санкт-Петербурге, один из ведущих музыкальных театров России.",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 40, y: 55 },
+    category: "theater",
+  },
+  {
+    id: 7,
+    name: "Памятник Петру I",
+    description:
+      "Монумент работы Этьена Фальконе, известный как 'Медный всадник', символ Санкт-Петербурга.",
+    image:
+      "https://images.unsplash.com/photo-1597149051399-9d2eabfa5c13?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 75, y: 30 },
+    category: "monument",
+  },
+  {
+    id: 8,
+    name: "ГМИИ им. Пушкина",
+    description:
+      "Один из самых значительных музеев мирового искусства, обладающий коллекциями зарубежного искусства.",
+    image:
+      "https://images.unsplash.com/photo-1589397086084-ec857b04e98f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 25, y: 60 },
+    category: "museum",
+  },
+  {
+    id: 9,
+    name: "Центр современного искусства 'Винзавод'",
+    description:
+      "Один из крупнейших частных центров современного искусства в России.",
+    image:
+      "https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 70, y: 65 },
+    category: "gallery",
+  },
+  {
+    id: 10,
+    name: "МХТ им. Чехова",
+    description:
+      "Московский Художественный театр, основанный Станиславским и Немировичем-Данченко.",
+    image:
+      "https://images.unsplash.com/photo-1503095396549-807759245b35?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 50, y: 20 },
+    category: "theater",
+  },
+  {
+    id: 11,
+    name: "Памятник Минину и Пожарскому",
+    description:
+      "Скульптурная группа на Красной площади, первый памятник в Москве, поставленный не в честь государя.",
+    image:
+      "https://images.unsplash.com/photo-1547036967-23d11aacaee0?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 60, y: 50 },
+    category: "monument",
+  },
+  {
+    id: 12,
+    name: "Эрарта",
+    description: "Крупнейший частный музей современного искусства в России.",
+    image:
+      "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 35, y: 75 },
+    category: "gallery",
+  },
+  {
+    id: 13,
+    name: "Кунсткамера",
+    description:
+      "Первый музей России, основанный Петром I, музей антропологии и этнографии.",
+    image:
+      "https://images.unsplash.com/photo-1601562347730-f15c8dfd0d3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 80, y: 45 },
+    category: "museum",
+  },
+  {
+    id: 14,
+    name: "Александринский театр",
+    description:
+      "Старейший государственный театр России, основанный в 1756 году.",
+    image:
+      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 15, y: 35 },
+    category: "theater",
+  },
+  {
+    id: 15,
+    name: "Родина-мать зовёт!",
+    description:
+      "Композиционный центр памятника-ансамбля 'Героям Сталинградской битвы' на Мамаевом кургане.",
+    image:
+      "https://images.unsplash.com/photo-1576420252689-53311cad261e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 85, y: 75 },
+    category: "monument",
+  },
+  {
+    id: 16,
+    name: "Новая Третьяковка",
+    description:
+      "Галерея искусства XX-XXI веков, часть Государственной Третьяковской галереи.",
+    image:
+      "https://images.unsplash.com/photo-1578321272176-b7bbc0679853?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3",
+    location: { x: 45, y: 80 },
+    category: "gallery",
+  },
 ];
 
 const categoryIcons = {
